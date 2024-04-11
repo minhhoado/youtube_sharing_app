@@ -1,0 +1,4 @@
+= form_for(:user, url: session_path(:user), html: { class: "flex items-center" }) do |f|
+  = f.email_field :email, placeholder: 'Email', class: 'px-3 py-2 mr-2 rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-gray-700 text-white'
+  = f.password_field :password, placeholder: 'Password', class: 'px-3 py-2 mr-2 rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-gray-700 text-white'
+  = f.submit 'Login/Register', class: 'px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white rounded-md'
